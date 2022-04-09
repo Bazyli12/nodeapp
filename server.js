@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
     res.sendFile('./index.html', { root: __dirname })
+    console.log('dziala')
 })
 
 app.listen(port, () => {
