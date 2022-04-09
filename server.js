@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
     console.log('dziala')
 })
 
+app.use('/src', express.static(path.join(__dirname, 'src')))
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
