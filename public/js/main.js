@@ -1,19 +1,17 @@
-import './main.css'
-
 document.querySelector('main').innerHTML = `
     <div class="text-container">
-        <div class="text" >Kotki</div>
+        <div class="text">Kotki</div>
     </div>
     <div class="img-container">
-        <img src="../src/components/img/cat1.gif" alt="">
-        <img src="../src/components/img/cat2.gif" alt="">
-        <img src="../src/components/img/cat3.gif" alt="">
-        <img src="../src/components/img/cat4.gif" alt="">
-        <img src="../src/components/img/cat5.gif" alt="">
-        <img src="../src/components/img/cat6.gif" alt="">
-        <img src="../src/components/img/cat7.gif" alt="">
-        <img src="../src/components/img/cat8.gif" alt="">
-        <img src="../src/components/img/cat9.gif" alt="">
+        <img src="./public/img/cats/cat1.gif" data-kot="kot1" alt="">
+        <img src="./public/img/cats/cat2.gif" data-kot="kot2" alt="">
+        <img src="./public/img/cats/cat3.gif" data-kot="kot3" alt="">
+        <img src="./public/img/cats/cat4.gif" data-kot="kot4" alt="">
+        <img src="./public/img/cats/cat5.gif" data-kot="kot5" alt="">
+        <img src="./public/img/cats/cat6.gif" data-kot="kot6" alt="">
+        <img src="./public/img/cats/cat7.gif" data-kot="kot7" alt="">
+        <img src="./public/img/cats/cat8.gif" data-kot="kot8" alt="">
+        <img src="./public/img/cats/cat9.gif" data-kot="kot9" alt="">
     </div>
     <div class="blobs-container">
         <svg class="blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +27,6 @@ document.querySelector('main').innerHTML = `
         <button aria-label="Poprzednie zdjęcie" class="popup__arrow popup__arrow--left"><</button>
         <button aria-label="Następne zdjęcie" class="popup__arrow popup__arrow--right">></button>
     </div>
-
 `
 
 

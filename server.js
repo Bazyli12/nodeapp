@@ -1,18 +1,18 @@
 const express = require('express')
-const path = require('path')
 const app = express()
 const port = process.env.PORT || 5000
 
-app.use(express.static("public"));
-
-app.use(express.static(__dirname + '/public'));
+let emojis = ['🧨', '🎲', '🔱', '🔑', '🧵', '🐈', '🏴‍☠️', '🥙']
+let number = 1
 
 app.get('/', (req, res) => {
     res.sendFile('./index.html', { root: __dirname })
-    console.log('dziala')
+    console.log(`${emojis[Math.floor(Math.random()*emojis.length)]} Działa! - ${number++}`)
 })
+
+app.use('/public', express.static('public/'));
 
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`🌐 - ${port}\n`)
 })

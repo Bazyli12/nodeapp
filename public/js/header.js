@@ -1,5 +1,3 @@
-import './header.css'
-
 document.querySelector('header').innerHTML = `
     <div class="header">
     <a href="#" class="logo">

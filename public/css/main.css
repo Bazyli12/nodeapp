@@ -48,7 +48,8 @@ body.dark {
     --b_blob2_5: #282828;
 }
 
-body {
+body,
+html {
     background-color: var(--b_main);
 }
 
