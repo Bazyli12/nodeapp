@@ -3,15 +3,15 @@ document.querySelector('main').innerHTML = `
         <div class="text">Kotki</div>
     </div>
     <div class="img-container">
-        <img src="./public/img/cats/cat1.gif" data-kot="kot1" alt="">
-        <img src="./public/img/cats/cat2.gif" data-kot="kot2" alt="">
-        <img src="./public/img/cats/cat3.gif" data-kot="kot3" alt="">
-        <img src="./public/img/cats/cat4.gif" data-kot="kot4" alt="">
-        <img src="./public/img/cats/cat5.gif" data-kot="kot5" alt="">
-        <img src="./public/img/cats/cat6.gif" data-kot="kot6" alt="">
-        <img src="./public/img/cats/cat7.gif" data-kot="kot7" alt="">
-        <img src="./public/img/cats/cat8.gif" data-kot="kot8" alt="">
-        <img src="./public/img/cats/cat9.gif" data-kot="kot9" alt="">
+        <img tabindex="0" src="./public/img/cats/cat1.gif" data-kot="kot1" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat2.gif" data-kot="kot2" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat3.gif" data-kot="kot3" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat4.gif" data-kot="kot4" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat5.gif" data-kot="kot5" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat6.gif" data-kot="kot6" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat7.gif" data-kot="kot7" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat8.gif" data-kot="kot8" alt="" class="thumbnail">
+        <img tabindex="0" src="./public/img/cats/cat9.gif" data-kot="kot9" alt="" class="thumbnail">
     </div>
     <div class="blobs-container">
         <svg class="blob1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

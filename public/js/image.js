@@ -1,4 +1,4 @@
-const THUMBNAILS = document.querySelectorAll("img-container img")
+const THUMBNAILS = document.querySelectorAll(".img-container .thumbnail")
 const POPUP = document.querySelector(".popup");
 const POPUP_CLOSE = document.querySelector(".popup__close");
 const POPUP_IMG = document.querySelector(".popup__img");
@@ -14,6 +14,7 @@ const showNextImg = () => {
         currentImgIndex++;
     }
     POPUP_IMG.src = THUMBNAILS[currentImgIndex].src;
+    console.log('shownextimage')
 };
 
 const showPreviousImg = () => {
@@ -23,6 +24,7 @@ const showPreviousImg = () => {
         currentImgIndex--;
     }
     POPUP_IMG.src = THUMBNAILS[currentImgIndex].src;
+    console.log('showpreviousimage')
 };
 
 const closePopup = () => {
@@ -34,9 +36,11 @@ const closePopup = () => {
             element.setAttribute("tabindex", 1);
         });
     }, 300);
+    console.log('closepopup')
 };
 
 THUMBNAILS.forEach((thumbnail, index) => {
+    console.log(index)
     const showPopup = (e) => {
         POPUP.classList.remove("hidden");
         POPUP_IMG.src = e.target.src;
